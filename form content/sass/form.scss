@@ -1,0 +1,59 @@
+@import "base";
+
+[type=submit] {
+  border-radius: 4px;
+  padding: .5em 1.5em;
+  border: none;
+  font-weight: bold;
+  color: #eee;
+  background: #5792c8;
+}
+.disabled {
+  background: #c85757;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+
+// 会員登録フォーム
+.nocomplete {
+  @extend .disabled;
+}
+.form {
+  input, textarea, select, option {
+    font-family: inherit;
+    border: 1px #bbb solid;
+    padding: .5em 1em;
+    border-radius: 3px;
+    &:hover {
+      border-color: #bbb - #333;
+    }
+    &:focus {
+      outline: none;
+      background: #feecec;
+    }
+  }
+  &Item {
+    padding-bottom: 10px;
+    border-bottom: 1px #ddd dashed;
+    margin-top: 10px;
+  }
+  [name=zipcode] {
+    width: 7em;
+  }
+  [name=address], [name=building] {
+    width: 20em;
+  }
+}
+.label {
+  display: block;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 6px;
+}
+.block {
+  display: block;
+  margin-bottom: 6px;
+}

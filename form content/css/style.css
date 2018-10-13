@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import "//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+html {
+  font-size: 62.5%; }
+
+body {
+  font: 1.4em/1.6 Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #222; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.inner {
+  width: 1000px;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
+  .sect .inner {
+    border: 1px #ccc solid;
+    border-radius: 3px; }
+
+.sect {
+  margin: 40px 0; }
+  .sectTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    background: #f4f4f4;
+    border-bottom: 1px #ccc solid;
+    padding: .5em 0 .5em 1em; }
+  .sectH2 {
+    font-size: 1.4em;
+    font-weight: bold; }
+  .sectBody {
+    padding: 20px; }
+  .sectContents {
+    margin-bottom: 20px; }
+    .sectContents ul {
+      list-style-type: disc;
+      padding-left: 1em; }
+  .sectTable {
+    width: 100%; }
+    .sectTable th {
+      background: #f4f4f4;
+      font-weight: bold; }
+    .sectTable th, .sectTable td {
+      padding: 4px 6px;
+      border-top: 1px #aaa solid;
+      border-left: 1px #aaa solid;
+      text-align: left; }
+    .sectTable tr {
+      border-right: 1px #aaa solid;
+      border-bottom: 1px #aaa solid; }

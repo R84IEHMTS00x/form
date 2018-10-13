@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>フォームについて</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+  <div id="wrapper">
+    <!-- sect.sect>.inner>h1.sectTitle+.sectBody -->
+    <section class="sect">
+      <div class="inner">
+        <h1 class="sectTitle">実用的なフォームを作成</h1>
+        <div class="sectBody">
+          <h2 class="sectH2">会員登録</h2>
+          <div class="sectContents">
+            <form action="" class="form">
+              <div class="formItem">
+                <label for="name" class="label">氏名</label>
+                <div class="block"><input type="text" name="name" id="name"></div>
+              </div>
+              <div class="formItem">
+                <label for="tel" class="label">電話番号</label>
+                <div class="block"><input type="tel" name="tel" id="tel"></div>
+              </div>
+              <div class="formItem">
+                <label for="email" class="label">メールアドレス</label>
+                <div class="block"><input type="email" name="email" id="email"></div>
+              </div>
+              <div class="formItem">
+                <label for="passwd" class="label">パスワード</label>
+                <div class="block"><input type="password" name="passwd" id="passwd"></div>
+                <div class="block"><input type="password" name="passwdRetype" id="passwdRetype"></div>
+              </div>
+              <fieldset class="formItem">
+                <legend class="label">性別</legend>
+                <label><input type="radio" name="gender" id="gender1" value="1" checked>回答しない</label>
+                <label><input type="radio" name="gender" id="gender2" value="2">男性</label>
+                <label><input type="radio" name="gender" id="gender3" value="3">女性</label>
+              </fieldset>
+              <fieldset class="formItem">
+                <legend class="label">メールマガジンの購読</legend>
+                <label class="block"><input type="checkbox" name="magazine" id="magazine1" value="1" checked>大人のセレクトショップ</label>
+                <label class="block"><input type="checkbox" name="magazine" id="magazine2" value="2" checked>カジュアルファッション講座</label>
+                <label for="magazine_span">配信回数</label>
+                <select name="magazine_span" id="magazine_span">
+                  <option value="1">毎日</option>
+                  <optgroup label="毎週">
+                    <option value="2">月曜</option>
+                    <option value="3">木曜</option>
+                    <option value="4">月・木曜</option>
+                  </optgroup>
+                  <optgroup label="毎月">
+                    <option value="5">１日</option>
+                    <option value="6">１日・１０日・２０日</option>
+                  </optgroup>
+                  <option value="7">重要なお知らせのみ</option>
+                </select>
+              </fieldset>
+              <fieldset class="formItem">
+                <legend class="label" id="postcode">住所</legend>
+                <div class="block">〒 <input type="text" name="zipcode" id="zipcode"></div>
+                <div class="block"><input type="text" name="address" id="address"></div>
+                <div class="block"><input type="text" name="building" id="building"></div>
+              </fieldset>
+              <div class="formItem">
+                <label for="memo" class="label">備考</label>
+                <div class="block">
+                  <textarea name="memo" id="memo" rows="8" cols="40"></textarea>
+                </div>
+              </div>
+              <div class="formItem">
+                <button type="submit" id="submit" class="nocomplete" disabled>入力内容が不足しています。</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//jpostal-1006.appspot.com/jquery.jpostal.js"></script>
+  <script src="../js/form.js"></script>
+</body>
+</html>
